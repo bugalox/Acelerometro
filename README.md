@@ -1,5 +1,6 @@
 # Acelerometro
 ###  ¿QUÉ ES UN ACELERÓMETRO?
+<img src="imagenes/acele.png">
 Los acelerómetros se utilizan en mediciones de aceleración gravitacional estática, lo que le permite determinar el ángulo de desviación del objeto medido de la vertical, así como en mediciones de aceleración dinámica debido a golpes, movimiento, impacto o vibración, es decir, vibraciones de baja amplitud y baja frecuencia, que alcanzan varias docenas de Hz.
 
 - ¿Cómo funciona un acelerómetro mientras se mide la vibración? Este dispositivo se implementa directamente en el objeto que vibra, lo que le permite convertir la energía de vibración en una señal eléctrica que es proporcional a la aceleración momentánea del objeto.
@@ -9,6 +10,7 @@ Los acelerómetros se utilizan en mediciones de aceleración gravitacional está
 - ¿Qué es un acelerómetro? No es más que un transductor de aceleración que mide su propio movimiento en el espacio. Hay tres tipos básicos de acelerómetros, más de los cuales más adelante en el artículo.
 
 ### ¿CÓMO FUNCIONA UN ACELERÓMETRO?
+<img src="imagenes/segunda.png">
 El principio de los aceleradores no es demasiado complicado. Mide la fuerza de aceleración en la unidad g y puede medir en uno, dos o tres planos. Actualmente, los acelerómetros de 3 ejes más utilizados, cuya construcción consiste en un sistema de tres acelerómetros, cada uno de los cuales mide la aceleración en una dirección diferente, en los planos X, Y y Z. Un ejemplo de un acelerómetro de 3 ejes puede ser un modelo OKYSTAR OKY3230.OKY3230
 
 Si la aceleración en cualquier plano actúa en la dirección opuesta a la dirección del sensor, el acelerómetro medirá la aceleración con un valor negativo. De lo contrario, la aceleración se medirá con un valor positivo.
@@ -16,6 +18,7 @@ Si la aceleración en cualquier plano actúa en la dirección opuesta a la direc
 Si el acelerómetro no se ve afectado por ninguna aceleración externa, el dispositivo solo medirá la aceleración gravitacional, es decir, la fuerza de la gravedad. Suponiendo que el acelerómetro de 3 ejes está posicionado de tal manera que el sensor en el eje X se dirige hacia la izquierda, el sensor en el eje Y está hacia abajo y el sensor en el eje Z está hacia adelante y no actúan fuerzas sobre él, entonces el acelerómetro devolverá valores: X = 0 g, Y = 1 g, Z = 0 g. Si el mismo acelerómetro está inclinado hacia la izquierda, sus lecturas mostrarán: X = 1 g, Y = 0 g, Z = 0 g. Del mismo modo, cuando la desviación se produce a la derecha, el plano X devuelve el resultado X = -1 g. Las dependencias de medición de aceleración dadas son utilizadas por los algoritmos de los sistemas que supervisan el acelerador.
 
 ### ¿QUÉ TIPOS DE ACELERÓMETROS HAY?
+<img src="imagenes/tercera.png">
 Hay tres tipos entre los tipos básicos de acelerómetros: acelerómetros capacitivos MEMS, acelerómetros piezoeléctricos y acelerómetros piezorresistivos.
 
 #### Acelerómetros capacitivos MEMS
@@ -38,3 +41,4 @@ La señal de salida de los acelerómetros piezoeléctricos generalmente está su
 Otros diseños de aceleradores incluyen diseños IEPE que se usan comúnmente para mediciones de vibraciones. Cabe destacar también los acelerómetros de carga piezoeléctricos, que funcionan bien en temperaturas extremas.
 
 ## Tabla
+<img src="imagenes/Tabla.png">
