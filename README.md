@@ -1,4 +1,6 @@
 # Acelerometro
+
+
 ###  ¿QUÉ ES UN ACELERÓMETRO?
 <img src="imagenes/acele.png">
 Los acelerómetros se utilizan en mediciones de aceleración gravitacional estática, lo que le permite determinar el ángulo de desviación del objeto medido de la vertical, así como en mediciones de aceleración dinámica debido a golpes, movimiento, impacto o vibración, es decir, vibraciones de baja amplitud y baja frecuencia, que alcanzan varias docenas de Hz.
@@ -42,3 +44,35 @@ Otros diseños de aceleradores incluyen diseños IEPE que se usan comúnmente pa
 
 ## Tabla
 <img src="imagenes/Tabla.png">
+# Ejemplo
+Para conectar un acelerómetro al Raspberry Pi Pico, se necesitan los siguientes pasos:
+
+Conectar el pin SCL del acelerómetro al pin GP3 del Pi Pico.
+Conectar el pin SDA del acelerómetro al pin GP2 del Pi Pico.
+Conectar el pin VCC del acelerómetro al pin 3V3 del Pi Pico.
+Conectar el pin GND del acelerómetro al pin GND del Pi Pico.
+
+SCL: Este es el pin de reloj del bus I2C. Es utilizado para sincronizar las comunicaciones entre el Raspberry Pi Pico y el acelerómetro. En la Raspberry Pi Pico, el pin SCL se encuentra en el pin GPIO1.
+SDA: Este es el pin de datos del bus I2C. Es utilizado para transmitir los datos entre el Raspberry Pi Pico y el acelerómetro. En la Raspberry Pi Pico, el pin SDA se encuentra en el pin GPIO0.
+
+
+'''
+codigo
+import time 
+import board
+import busio    
+import adafruit_mpu6050
+
+# define I2c and initial accelerometer values
+i2c = busio.I2C(board.GP3, board.GP2)
+mpu = adafruit_mpu6050.MPU6050(i2c)
+
+while True:
+    print("Acceleration : X: %.2f, Y: %.2f Z: %.2f m/s^2" % (mpu.acceleration))
+    print("Gyro X: %.2f, Y: %.2f, Z: %.2f rad/s" % (mpu.gyro))
+    print("Temperature: %.2f C" % mpu.temperature)
+    print("")
+    time.sleep(1)
+'''
+
+
