@@ -4,11 +4,11 @@
     <b>Instituto Tecnológico de Tijuana</b><br>
     <b>Depto de Sistemas y Computación</b><br>
     <b>Ing. En Sistemas Computacionales</b><br>
-    <b>ACELERÓMETRO</b><br>
+    <b> Acelerometro </b><br>
     <b>Autor : Alejandro Martinez Reyes</b><br>
-    <b>Repositorio:ACELERÓMETRO</b><br>
+    <b>Repositorio: Acelerometro </b><br>
     <b>Fecha de revisión:   03/07/2023</b><br>
-    <b>Objetivo del programa: Pagina Web Del ACELERÓMETRO</b>
+    <b>Objetivo del programa: Pagina Web Del Acelerometro </b>
 
 </p>
 # Acelerometro
