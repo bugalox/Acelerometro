@@ -44,6 +44,7 @@ Otros diseños de aceleradores incluyen diseños IEPE que se usan comúnmente pa
 
 ## Tabla
 <img src="imagenes/Tabla.png">
+
 ## Ejemplo
 Para conectar un acelerómetro al Raspberry Pi Pico, se necesitan los siguientes pasos:
 - Conectar el pin SCL del acelerómetro al pin GP3 del Pi Pico.
