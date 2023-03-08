@@ -11,7 +11,7 @@
     <b>Objetivo del programa: Pagina Web Del Acelerometro </b>
 </p>
 
-# Acelerometro
+<h1 align="center"> Acelerometro </h1>
 
 
 ###  ¿QUÉ ES UN ACELERÓMETRO?
@@ -55,10 +55,10 @@ La señal de salida de los acelerómetros piezoeléctricos generalmente está su
 #### Otros acelerómetros
 Otros diseños de aceleradores incluyen diseños IEPE que se usan comúnmente para mediciones de vibraciones. Cabe destacar también los acelerómetros de carga piezoeléctricos, que funcionan bien en temperaturas extremas.
 
-## Tabla
+<h1 align="center"> Tabla </h1>
 <img src="imagenes/Tabla.png">
 
-## Ejemplo
+<h1 align="center"> Ejemplo </h1>
 Raspberry Pi Pico a Bop It
 Para conectar un acelerómetro al Raspberry Pi Pico, se necesitan los siguientes pasos:
 - Conectar el pin SCL del acelerómetro al pin GP3 del Pi Pico.
