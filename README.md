@@ -46,6 +46,7 @@ Otros diseños de aceleradores incluyen diseños IEPE que se usan comúnmente pa
 <img src="imagenes/Tabla.png">
 
 ## Ejemplo
+Raspberry Pi Pico a Bop It
 Para conectar un acelerómetro al Raspberry Pi Pico, se necesitan los siguientes pasos:
 - Conectar el pin SCL del acelerómetro al pin GP3 del Pi Pico.
 - Conectar el pin SDA del acelerómetro al pin GP2 del Pi Pico.
@@ -75,5 +76,5 @@ while True:
     print("")
     time.sleep(1)
 ```
-
+se puede realizar en  CircuitPython o MicroPython
 
