@@ -55,6 +55,8 @@ Para conectar un acelerómetro al Raspberry Pi Pico, se necesitan los siguientes
 - SCL: Este es el pin de reloj del bus I2C. Es utilizado para sincronizar las comunicaciones entre el Raspberry Pi Pico y el acelerómetro. En la Raspberry Pi Pico, el pin SCL se encuentra en el pin GPIO1.
 - SDA: Este es el pin de datos del bus I2C. Es utilizado para transmitir los datos entre el Raspberry Pi Pico y el acelerómetro. En la Raspberry Pi Pico, el pin SDA se encuentra en el pin GPIO0.
 
+<img src="imagenes/final.png">
+
 ```python
 codigo
 import time 
