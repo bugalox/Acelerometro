@@ -9,8 +9,8 @@
     <b>Repositorio: Acelerometro </b><br>
     <b>Fecha de revisión:   03/07/2023</b><br>
     <b>Objetivo del programa: Pagina Web Del Acelerometro </b>
-
 </p>
+
 # Acelerometro
 
 
