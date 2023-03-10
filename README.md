@@ -92,7 +92,9 @@ while True:
         Pin(25, Pin.OUT).value(0) 
     time.sleep(1)
 ```
+https://wokwi.com/projects/358588697965663233
+
 se puede realizar en  CircuitPython o MicroPython
 
-https://wokwi.com/projects/358588697965663233
+
 
