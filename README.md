@@ -93,5 +93,6 @@ while True:
     time.sleep(1)
 ```
 se puede realizar en  CircuitPython o MicroPython
+
 https://wokwi.com/projects/358588697965663233
 
