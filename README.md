@@ -73,20 +73,23 @@ Para conectar un acelerómetro al Raspberry Pi Pico, se necesitan los siguientes
 
 ```python
 codigo
-import time 
-import board
-import busio    
-import adafruit_mpu6050
+from imu import MPU6050  
+import time
+from machine import Pin, I2C
 
-# define I2c and initial accelerometer values
-i2c = busio.I2C(board.GP3, board.GP2)
-mpu = adafruit_mpu6050.MPU6050(i2c)
+i2c = I2C(0, sda=Pin(0), scl=Pin(1), freq=400000)
+imu = MPU6050(i2c)
+Pin(25, Pin.OUT).value(0)
 
 while True:
-    print("Acceleration : X: %.2f, Y: %.2f Z: %.2f m/s^2" % (mpu.acceleration))
-    print("Gyro X: %.2f, Y: %.2f, Z: %.2f rad/s" % (mpu.gyro))
-    print("Temperature: %.2f C" % mpu.temperature)
-    print("")
+    acceleration = imu.accel.magnitude
+    print (acceleration)
+    
+    if abs(acceleration - 1) > 0.1:
+        print("It is moving!")   
+        Pin(25, Pin.OUT).value(1) 
+    else: 
+        Pin(25, Pin.OUT).value(0) 
     time.sleep(1)
 ```
 se puede realizar en  CircuitPython o MicroPython
